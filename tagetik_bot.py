@@ -81,7 +81,7 @@ def generar_reportes():
         pyautogui.click(centro)
 
         time.sleep(2)
-        boton_coords = pyautogui.locateCenterOnScreen('img/month.png', confidence=0.7)
+        boton_coords = pyautogui.locateCenterOnScreen('img/month.png', confidence=0.9)
         pyautogui.doubleClick(boton_coords)
 
         time.sleep(2)
