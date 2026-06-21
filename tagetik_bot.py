@@ -248,7 +248,7 @@ def generar_reportes():
         y_clic = caja_parametro.top + (caja_parametro.height / 2)
         pyautogui.click(x_clic, y_clic)
 
-        #click en el consolidation scenario 2026-USD
+        #click en el consolidation scenario 2026-USD-CAD
         time.sleep(2)
         green_iconos = list(pyautogui.locateAllOnScreen('img/green-icon.png', confidence=0.7))
         ultima_opcion = green_iconos[-1] 
@@ -292,7 +292,7 @@ def generar_reportes():
         y_clic = caja_parametro.top + (caja_parametro.height / 2)
         pyautogui.click(x_clic, y_clic)
 
-        #click en el consolidation scenario 2026-USD
+        #click en el consolidation scenario 2026-USD-CAD
         time.sleep(2)
         green_iconos = list(pyautogui.locateAllOnScreen('img/green-icon.png', confidence=0.7))
         ultima_opcion = green_iconos[-1] 

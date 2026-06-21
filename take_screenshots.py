@@ -20,6 +20,10 @@ def capturar_reporte_completo(nombre_base):
         # Ir a la celda A1 para asegurar que estamos al inicio
         wb.sheets.active.range("A1").select()
         time.sleep(0.5)
+
+        #Validacion si es el reporte 315
+        if sheet.range('B3').value == 'Income Statement: CY & PY Comparison - MTD':
+            sheet.range('C:C').column_width = 45
         
         ruta_inicial = os.path.join(SCREENSHOT_DIR, f"{nombre_base}_inicial.png")
         pyautogui.screenshot(ruta_inicial)
