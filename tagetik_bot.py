@@ -169,9 +169,9 @@ def generar_reportes():
         boton_coords = pyautogui.locateCenterOnScreen('img/201.png', confidence=0.9)
         pyautogui.doubleClick(boton_coords)
 
-        take_screenshots.captura_inputs('report_201')
 
         boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+        take_screenshots.captura_inputs('report_201')
         pyautogui.click(boton)
         time.sleep(1)
 
@@ -191,9 +191,9 @@ def generar_reportes():
         boton_coords = pyautogui.locateCenterOnScreen('img/202.png', confidence=0.9)
         pyautogui.doubleClick(boton_coords)
 
-        take_screenshots.captura_inputs('report_202')
 
         boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+        take_screenshots.captura_inputs('report_202')
         pyautogui.click(boton)
 
         boton = esperar_imagen('export.png', timeout=20, confidence=0.7)
@@ -212,9 +212,9 @@ def generar_reportes():
         boton_coords = pyautogui.locateCenterOnScreen('img/203.png', confidence=0.9)
         pyautogui.doubleClick(boton_coords)
 
-        take_screenshots.captura_inputs('report_203')
 
         boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+        take_screenshots.captura_inputs('report_203')
         pyautogui.click(boton)
 
         boton = esperar_imagen('export.png', timeout=20, confidence=0.7)
@@ -233,9 +233,9 @@ def generar_reportes():
         boton_coords = pyautogui.locateCenterOnScreen('img/204.png', confidence=0.9)
         pyautogui.doubleClick(boton_coords)
 
-        take_screenshots.captura_inputs('report_204')
 
         boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+        take_screenshots.captura_inputs('report_204')
         pyautogui.click(boton)
 
         boton = esperar_imagen('export.png', timeout=20, confidence=0.7)
@@ -254,9 +254,9 @@ def generar_reportes():
         boton_coords = pyautogui.locateCenterOnScreen('img/205.png', confidence=0.9)
         pyautogui.doubleClick(boton_coords)
 
-        take_screenshots.captura_inputs('report_205')
 
         boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+        take_screenshots.captura_inputs('report_205')
         pyautogui.click(boton)
 
         boton = esperar_imagen('export.png', timeout=20, confidence=0.7)
@@ -275,9 +275,9 @@ def generar_reportes():
         boton_coords = pyautogui.locateCenterOnScreen('img/206.png', confidence=0.9)
         pyautogui.doubleClick(boton_coords)
 
-        take_screenshots.captura_inputs('report_206')
 
         boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+        take_screenshots.captura_inputs('report_206')
         pyautogui.click(boton)
 
         boton = esperar_imagen('export.png', timeout=20, confidence=0.7)
@@ -510,9 +510,9 @@ def generar_reportes():
         boton_coords = pyautogui.locateCenterOnScreen('img/total.png', confidence=0.7)
         pyautogui.doubleClick(boton_coords)
 
-        take_screenshots.captura_inputs('report_402')
 
         boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+        take_screenshots.captura_inputs('report_402')
         pyautogui.click(boton)
 
         time.sleep(6)
