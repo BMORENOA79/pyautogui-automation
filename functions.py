@@ -8,8 +8,6 @@ import take_screenshots
 # Definir la base una sola vez
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-
-
 def limpiar_carpeta_reportes(ruta_carpeta):
     print(f"🧹 Limpiando archivos de Excel en: {ruta_carpeta}")
     
@@ -156,3 +154,25 @@ def cerrar_libros_abiertos():
     
     print("Iniciando limpieza profunda de Excel...")
     os.system("taskkill /f /im excel.exe")
+
+def genenate_report(img:str, report:str ):
+
+    time.sleep(3)
+    boton_coords = pyautogui.locateCenterOnScreen(f'img/{img}.png', confidence=0.9)
+    pyautogui.doubleClick(boton_coords)
+
+    boton = esperar_imagen('ok.png', timeout=20, confidence=0.7)
+    take_screenshots.captura_inputs(report)
+    pyautogui.click(boton)
+    time.sleep(1)
+
+    boton = esperar_imagen('export.png', timeout=20, confidence=0.7)
+    time.sleep(2)
+    pyautogui.click(boton)
+
+    time.sleep(3)
+    boton_coords = esperar_imagen('save.png', timeout=20, confidence=0.7)
+    time.sleep(1)
+    pyautogui.click(boton_coords)
+
+    take_uic(report)
