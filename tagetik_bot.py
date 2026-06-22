@@ -6,7 +6,8 @@ import glob
 import take_screenshots
 from functions import esperar_caja_imagen, esperar_imagen, limpiar_carpeta_reportes, take_uic, genenate_report
 
-carpeta_reportes = r'C:\Users\bmorenoa\Documents'
+usuario_actual = os.getlogin()
+carpeta_reportes = rf'C:\Users\{usuario_actual}\Documents'
 
 def generar_reportes():
     
@@ -129,6 +130,13 @@ def generar_reportes():
     genenate_report(img='315 IS', report='report_315')
 
     #Open 200 Reports
+    time.sleep(2)
+    boton_coords = pyautogui.locateCenterOnScreen('img/300 financial statements.png', confidence=0.7)
+    pyautogui.click(boton_coords)
+    time.sleep(1)
+    pyautogui.press('pageup')
+
+
     time.sleep(3)
     caja_parametro = pyautogui.locateOnScreen('img/200 reports.png', confidence=0.7)
     x_clic = caja_parametro.left + 15
